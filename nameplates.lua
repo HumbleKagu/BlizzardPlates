@@ -377,7 +377,7 @@ pfNameplates:SetScript("OnUpdate", function()
           nameplate.debuffs[j]:SetWidth(12)
           nameplate.debuffs[j]:SetHeight(12)
           if j == 1 then
-            nameplate.debuffs[j]:SetPoint("TOPLEFT", healthbar, "BOTTOMLEFT", 0, -3)
+            nameplate.debuffs[j]:SetPoint("TOPLEFT", healthbar, "TOPLEFT", 0, 30)
           elseif j <= 8 then
             nameplate.debuffs[j]:SetPoint("LEFT", nameplate.debuffs[j-1], "RIGHT", 1, 0)
           elseif j > 8 then
